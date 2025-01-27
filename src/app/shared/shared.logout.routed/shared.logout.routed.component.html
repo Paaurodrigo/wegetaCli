@@ -1,0 +1,43 @@
+<div class="row justify-content-center m-3">
+  <div class="col-lg-7 col-md-10 col-sm-12">
+    <!-- Encabezado principal -->
+    <h1 class="my-5 text-center text-primary">
+      <i class="bi bi-exclamation-triangle"></i>
+      Confirmar Logout
+      <i class="bi bi-person-circle"></i>
+    </h1>
+    <br />
+    
+    <!-- Contenedor principal con sombra y bordes redondeados -->
+    <div class="logout-container text-center p-4 border rounded shadow-lg bg-light">
+      <h2 class="text-danger">¿Estás seguro de que quieres salir?</h2>
+      <p class="text-muted">
+        Si cierras sesión, deberás volver a iniciar sesión para acceder a tu cuenta. 
+        <br />Asegúrate de haber guardado tu trabajo.
+      </p>
+
+      <!-- Separador decorativo -->
+      <hr class="my-4" />
+
+      <!-- Icono adicional decorativo -->
+      <div class="my-3">
+        <i class="bi bi-box-arrow-right text-danger display-4"></i>
+      </div>
+
+      <!-- Botones de confirmación -->
+      <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-danger mx-2 px-4 py-2" (click)="confirmLogout()">
+          <i class="bi bi-check-circle"></i> Sí, salir
+        </button>
+        <button class="btn btn-secondary mx-2 px-4 py-2" (click)="cancelLogout()">
+          <i class="bi bi-x-circle"></i> Cancelar
+        </button>
+      </div>
+    </div>
+
+    <!-- Mensaje adicional para crear una experiencia más amigable -->
+    <p class="text-center text-muted mt-3">
+      Gracias por usar nuestra plataforma. ¡Te esperamos pronto!
+    </p>
+  </div>
+</div>
